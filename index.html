@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Results</h2>
+        <p>Hello, <b>{{ name }}</b>! Your BMI is: <b>{{ bmi }}</b></p>
+        <h3>Personalized Plan:</h3>
+        <p>{{ plan }}</p>
+        <a href="/">Back to Home</a>
+        <a href="result.html">Go to Results</a>
+        <button onclick="window.location.href='result.html'">Go to Results</button>
+        <a href="/result">Go to Results</a>
+    </div>
+</body>
+
+</html>

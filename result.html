@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Diet Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .container {        
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 10px;
+            margin-top: a50px;
+        }
+
+        input,
+        select,
+        button {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        h2 {
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .as {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .qw {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .er {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .rt {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .yu {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Fitness & Diet Planner</h2>
+        <form action="/result" method="post">
+            <label class="as">Name:</label><br>
+            <input type="text" name="name" required><br>
+
+            <label class="qw">Age:</label><br>
+            <input type="number" name="age" required><br>
+
+            <label class="er">Height (in meters):</label><br>
+            <input type="number" step="0.01" name="height" required><br>
+
+            <label class="rt">Weight (in kg):</label><br>
+            <input type="number" step="0.1" name="weight" required><br>
+
+            <label class="yu">Goal:</label><br>
+            <select name="goal">
+                <option value="weight loss">Weight Loss</option>
+                <option value="muscle gain">Muscle Gain</option>
+                <option value="maintenance">Maintenance</option>
+            </select><br>
+
+            <button type="submit">Get Plan</button>
+        </form>
+    </div>
+    <a href="index.html">Back to Home</a>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+    <a href="/">Back to Home</a>
+</body>
+
+</html>
